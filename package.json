@@ -1,0 +1,70 @@
+{
+  "name": "koa-api",
+  "version": "0.0.1",
+  "description": "graphQL api",
+  "main": "server.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "ava",
+    "dev": "nodemon src/server.js",
+    "postinstall": "cp .env.example .env -n",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/knexr.git"
+  },
+  "keywords": [
+    "knex",
+    "sql",
+    "gui",
+    "dbadmin"
+  ],
+  "author": "capajj@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/knexr/issues"
+  },
+  "homepage": "https://github.com/capaj/knexr#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "graphql": "^0.10.5",
+    "graphql-server-koa": "^1.0.5",
+    "graphql-tools": "^1.1.0",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-graphiql": "github:capaj/koa-graphiql",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "lokka": "^1.7.0",
+    "lokka-transport-http": "^1.6.1",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "plugins": [
+      "flowtype"
+    ],
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/",
+      "flow-typed/"
+    ]
+  },
+  "ava": {
+    "files": [
+      "**/*.spec.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
