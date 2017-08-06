@@ -2,7 +2,6 @@
   "name": "koa-api",
   "version": "0.0.1",
   "description": "graphQL api",
-  "main": "server.js",
   "scripts": {
     "pretest": "standard",
     "test": "ava",
