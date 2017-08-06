@@ -5,7 +5,8 @@ I made this because I wanted to bootstrap a graphQL api and all boilerplates wer
 
 ## npm commands
 
-- _test_ runs ava tests
-- _build_ builds out `src` into a `dist` folder so you can run the server in production without babel-node
-- _dev_ runs babel-node via nodemon, so all your changes are immediatelly in effect
+- **test** runs ava tests
+- **build** builds out `src` into a `dist` folder so you can run the server in production without babel-node
+- **dev** runs babel-node via nodemon, so all your changes are immediatelly in effect
 
+Pull requests are welcome!
