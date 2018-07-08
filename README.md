@@ -1,7 +1,7 @@
 # koa-graphql-boilerplate  
 a minimal boilerplate for graphql API running on koa, includes graphiql. Standard.js for linting with flowtype for typechecking
 
-I made this because I wanted to bootstrap a graphQL api and all boilerplates were outdated and they were missing ghraphiql.
+I made this because I wanted to bootstrap a graphQL api and all boilerplates were outdated and they were missing graphiql interface. Since then, graphiql has been incorporated into apollo-server, so thi boilerplate is obsolete. Rather just use the code from [here](https://github.com/apollographql/apollo-server#koa).
 
 ## npm commands
 
